@@ -47,7 +47,7 @@ function selectDB($conn, $name)
 
 function bongda()
 {
-	$api_key = '8dc0093111944cb7a9828f60ec8d03c2';
+	$api_key = '';
 	$team_id = '65';
 	$now = time();
 	$dateTo = date('Y-m-d', $now + 2592000);
