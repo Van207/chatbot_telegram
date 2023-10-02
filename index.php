@@ -5,17 +5,17 @@ include_once 'vendor/autoload.php';
 use Telegram\Bot\Api;
 
 $servername = "localhost";
-$username = "vannt_24gio";
-$password = "123@321";
-$dbname = "vannt_testchatbot";
+$username = "";
+$password = "";
+$dbname = "";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 mysqli_set_charset($conn, "utf8");
 // Phản hồi
 $update = json_decode(file_get_contents("php://input"), TRUE);
 $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
-$OPENAI_API_KEY = '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';
-$token = "6246285087:AAEY4WnQ2A_ir6iQnqMcC4w95l6WhZgQOug";
+$OPENAI_API_KEY = '';
+$token = "";
 $max_tokens = 4096;
 
 
